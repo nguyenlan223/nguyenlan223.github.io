@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size:clamp(10px, 2vw, 16px);
+}
+header{
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#wrapper{
+
+}
+.logo-wrapper{
+    margin: 0 41px;
+}
+#logo{
+    width: 157px;
+    height: 83px;
+}
+#menu{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    list-style: none;
+}
+nav{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+#menu li a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+#menu li{
+    padding: 0 38px;
+    font-size: 1.4rem;
+   
+}
+#anh1{
+    width: 400px;
+    height: 300px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+#noiDung{
+
+}
+#khoi1{
+    display: flex;
+}
+.content{
+    display: flex;
+     margin-top: 20px;
+     height: 100vh;
+     font-size: 1.25em;
+     font-family: "Roboto", sans-serif;
+}
+.content section{
+    margin: 0 auto;
+    width: 90vw;
+}
+#khoi2{
+    margin-top: 53px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+#bars{
+    display: none;
+}
+@media(max-width:768px){
+    #bars{
+        flex: 1;
+        display: block !important;
+        text-align: end;
+        z-index: 1;
+    }
+    #bars i{
+      padding: 10px;
+      font-size: 1.4rem;
+    }
+    nav{
+        position: absolute;
+        top:100%;
+        right: 0;
+        left: 0;
+    }
+    #menu{
+        flex-direction: column;
+        overflow: hidden;
+       
+    }
+    #menu li{
+        padding: 20px;
+    }
+    footer{
+        display: none;
+    }
+    article{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
